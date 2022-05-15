@@ -13,7 +13,7 @@
             {% if superuser %}
                 <li class="dropend">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
-                        Todo list
+                        Task list
                         <i class="btn btn-sm btn-dark bg-opacity-50 badge rounded-pill"> {{ task_count }}</i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
@@ -23,14 +23,14 @@
                             {% if develop %}
                                 <a class="dropdown-item" href="{% url 'app_name_task_list:create' %}">
                                     <i class="fa-solid fa-circle-plus m-0 p-1"></i>
-                                    todo create
+                                    task create
                                 </a>
                             {% endif %}
                             {% access_tag 'develop' as develop %}
                             {% if develop %}
                                 <a class="dropdown-item" href="{% url 'app_name_task_list:read_list' %}">
                                     <i class="fa-solid fa-list m-0 p-1"></i>
-                                    todo list
+                                    task list
                                     <i class="btn btn-sm btn-dark bg-opacity-50 badge rounded-pill"> {{ task_count }}</i>
                                 </a>
                             {% endif %}

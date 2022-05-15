@@ -96,9 +96,9 @@ class Task(models.Model):
     class Meta:
         app_label = 'app_django'
         ordering = ('-updated',)
-        verbose_name = 'Todo'
-        verbose_name_plural = 'Todos'
-        db_table = 'todo_todo_list_model_table'
+        verbose_name = 'Task'
+        verbose_name_plural = 'Tasks'
+        db_table = 'task_task_list_model_table'
 
     def __str__(self):
         if self.is_completed:
