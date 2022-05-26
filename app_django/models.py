@@ -7,7 +7,7 @@ from django.utils import timezone
 
 class Task(models.Model):
     """
-    Модель, которая содержит токен пользователя django
+    Модель Task
     """
 
     title = models.CharField(
