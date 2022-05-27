@@ -43,6 +43,7 @@ def read(request, task_id=None):
 
 
 def read_list(request):
+
     is_detail_view = request.GET.get("is_detail_view", True)
     if is_detail_view == "False":
         is_detail_view = False

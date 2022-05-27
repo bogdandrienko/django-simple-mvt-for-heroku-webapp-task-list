@@ -17,7 +17,7 @@
     {% block prestyle %}{% endblock prestyle %}
     {% block icon %}<link rel="icon" href="{% static 'img/logo512.png' %}" type="image/png">{% endblock icon %}
     {#<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">#}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/font_awesome_6_0_0/css/all.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/font_zen/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
@@ -44,7 +44,7 @@
     </main>
     {% block footer %}{% endblock footer %}
     {% block prescript %}{% endblock prescript %}
-    <script src="{% static 'js/bootstrap/bootstrap.js' %}"></script>
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
     {% block postscript %}{% endblock postscript %}
 </body>
 </html>
